@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>892</width>
+    <height>644</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color:  rgb(33, 162, 248);
+}
+
+#widget {
+border: 3px solid  rgb(33, 162, 248);
+border-radius: 40px;
+background: white;
+}
+
+QPushButton {
+color: white;
+background-color:  rgb(33, 162, 248);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 10px;
+padding-left: 5px;
+padding-right: 5px;
+width: 150px;
+min-height: 13px;
+max-height: 13px;
+}
+
+
+
+
+  QScrollBar:horizontal {
+      border: 2px solid grey;
+      background-color:  rgb(33, 162, 248);
+      height: 15px;
+      margin: 0px 20px 0 20px;
+  }
+  QScrollBar::handle:horizontal {
+      background: white;
+      min-width: 20px;
+  }
+  QScrollBar::add-line:horizontal {
+      border: 2px solid grey;
+      background-color:  rgb(33, 162, 248);
+      width: 20px;
+      subcontrol-position: right;
+      subcontrol-origin: margin;
+  }
+
+  QScrollBar::sub-line:horizontal {
+      border: 2px solid grey;
+      background-color:  rgb(33, 162, 248);;
+      width: 20px;
+      subcontrol-position: left;
+      subcontrol-origin: margin;
+  }
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>171</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+    </property>
+    <widget class="QPushButton" name="resetButton">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>280</y>
+       <width>164</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(33, 162, 248);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Reset</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>340</y>
+       <width>164</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(33, 162, 248);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>About</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>30</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="AddButton">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>190</y>
+       <width>164</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(33, 162, 248);
+color: rgb(255, 255, 255);
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Add</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="printButton">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>250</y>
+       <width>164</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(33, 162, 248);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Print</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="reloadButton">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>220</y>
+       <width>164</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(33, 162, 248);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Reload</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="uploadFileButton">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>310</y>
+       <width>164</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(33, 162, 248);
+color: rgb(255, 255, 255);
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Upload File</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>-10</y>
+      <width>681</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <widget class="QTableView" name="tableView">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>651</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="gridStyle">
+      <enum>Qt::DashDotLine</enum>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>171</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);
+image: url(:/logo/Images/Logo/NPU.png);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>892</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">  QMenuBar {
+      background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                        stop:0 lightgray, stop:1 darkgray);
+  }
+
+  QMenuBar::item {
+      spacing: 3px; /* spacing between menu bar items */
+      padding: 1px 4px;
+      background: transparent;
+      border-radius: 4px;
+  }
+
+  QMenuBar::item:selected { /* when selected using mouse or keyboard */
+      background: #a8a8a8;
+  }
+
+  QMenuBar::item:pressed {
+      background: #888888;
+  }
+</string>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Add</string>
+    </property>
+    <addaction name="actionNew_Window"/>
+   </widget>
+   <widget class="QMenu" name="menuReloas">
+    <property name="title">
+     <string>Reload</string>
+    </property>
+    <addaction name="actionReload"/>
+   </widget>
+   <widget class="QMenu" name="menuPrinter">
+    <property name="title">
+     <string>Printer</string>
+    </property>
+    <addaction name="actionPrint"/>
+   </widget>
+   <widget class="QMenu" name="menuResetting">
+    <property name="title">
+     <string>Reset</string>
+    </property>
+    <addaction name="actionReset"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuReloas"/>
+   <addaction name="menuPrinter"/>
+   <addaction name="menuResetting"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew_Window"/>
+   <addaction name="actionReload"/>
+   <addaction name="actionPrint"/>
+   <addaction name="actionReset"/>
+   <addaction name="actionAbout"/>
+  </widget>
+  <action name="actionNew_Window">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/Images/Icon/add.png</normaloff>:/icons/Images/Icon/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+  <action name="actionReload">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/Images/Icon/reload.png</normaloff>:/icons/Images/Icon/reload.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reload</string>
+   </property>
+  </action>
+  <action name="actionPrint">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/Images/Icon/printer.png</normaloff>:/icons/Images/Icon/printer.png</iconset>
+   </property>
+   <property name="text">
+    <string>Print</string>
+   </property>
+  </action>
+  <action name="actionReset">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/Images/Icon/reset.png</normaloff>:/icons/Images/Icon/reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reset</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/icons/Images/Icon/about.png</normaloff>:/icons/Images/Icon/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

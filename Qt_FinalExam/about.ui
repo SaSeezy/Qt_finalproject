@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>About</class>
+ <widget class="QDialog" name="About">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>430</width>
+    <height>283</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>391</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Version Beta
+
+This project is to design a small software allowing the management of international
+ students in Haitianyuan dormitory during the COVID19 period.
+This is to input a student data who wants to go out in a form, then storage them
+ in a Database.
+During that period, a student must not do more than 4 hours outside, he must
+ also spend the night in the dormitory.
+Every day, the agent responsible of the software management prints the list of
+ students who had left the previous day in a pdf file and sends it to ISO.
+
+
+Contact:lilsadiallo@gmail.com</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

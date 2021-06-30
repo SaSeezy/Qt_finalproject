@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/logo">
+        <file>Images/Logo/NPU.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+    <qresource prefix="/icons">
+        <file>Images/Icon/about.png</file>
+        <file>Images/Icon/add.png</file>
+        <file>Images/Icon/printer.png</file>
+        <file>Images/Icon/reload.png</file>
+        <file>Images/Icon/reset.png</file>
+    </qresource>
+</RCC>

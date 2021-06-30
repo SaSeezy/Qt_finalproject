@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileUploadDialog</class>
+ <widget class="QDialog" name="FileUploadDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>409</width>
+    <height>165</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">  QProgressBar {
+      border: 2px solid grey;
+      border-radius: 5px;
+  }
+
+  QProgressBar::chunk {
+      background-color: #05B8CC;
+      width: 20px;
+  }
+
+#FileUploadDialog{
+background:  rgb(33, 162, 248);;
+}
+
+QLineEdit {
+padding: 1px;
+border-style: solid;
+border: 2px solid  rgb(33, 162, 248);
+border-radius: 8px;
+}
+
+QPushButton {
+color: white;
+background-color:  rgb(33, 162, 248);
+border-width: 1px;
+border-color: #339;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+font-size: 10px;
+padding-left: 5px;
+padding-right: 5px;
+width: 150px;
+min-height: 13px;
+max-height: 13px;
+}
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Select File</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="placeholderText">
+      <string>select path</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="text">
+      <string>Upload</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="placeholderText">
+      <string>upload ftp server url</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QProgressBar" name="progressBar">
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
